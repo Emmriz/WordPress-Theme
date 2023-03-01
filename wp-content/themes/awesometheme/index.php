@@ -5,10 +5,10 @@
 
          while( have_posts() ): the_post(); ?>
 
-        <h3> <?php the_title(); ?></h3>
-         <p><?php the_content();?></p>
+        <h3><?php the_title(); ?></h3> 
+         <div class="thumbnail-"><?php the_post_thumbnail('large'); ?></div>image
          <small>Posted on: <?php the_time('F j, Y');?> at <?php the_time('g:i a')?> in <?php the_category();?></small>
-
+         <p><?php the_content();?></p>
          <hr>
 
        <?php endwhile;
